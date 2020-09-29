@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/style.css" >
+
+    <script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
+
+
+    <title>Robert´s Pets</title>
+</head>
+<body>
+    <header>
+        <img src="img/petlogo.png" width="150px" height="150px" >
+        <h1>Robert´s Pets</h1>
+
+        <nav Class="menu">
+            <a href="indexpet.html">Home</a>
+            <a href="about.html">About</a>
+            <a id="services" href="#">services</a>
+            <a href="register.html">Register</a>
+        </nav>
+    <br>
+    </header>
+
+    <main id="register-main" class="container">
+        <h2>Register</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="type">Type</label>
+                <input type="text" id="type" class="form-control">
+            </div>
+
+
+            <div class="form-group">
+                <label for="breed">Breed</label>
+                <input type="text" id="breed" class="form-control">
+
+            </div>
+
+            <div class="form-group">
+               
+                <label for="gender">Gender</label>
+                <select id="gender" class="form-control">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+        
+                <label for="services">Services</label>
+                <select id="services" class="form-control">
+                    <option value="" disabled selected>---- Select services ----</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Gym">Gym</option>
+                    <option value="Aesthetics and Spa">Aesthetics and Spa</option>
+                    <option value="Full services">Full services</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+
+                <label for="owner">Owner</label>
+                <input type="text" id="owner" class="form-control">
+            </div>
+
+            <div class="form-group">
+
+                <label for="contactphone">Contact phone</label>
+                <input type="text" id="contactphone" class="form-control">
+            </div>
+
+
+            <input type="register-btn" value="Register" class="btn btn-success" onclick="register()">
+       
+        </form>
+       <div id="pet"></div>
+       Profits: <div id="profits"></div>
+       <div>
+        <input class="form-control" type="search" name="petsearch" id="petsearch">
+        <buttom id="search-btn" class="btn btn-success">Search</buttom>
+       </div>
+        
+       <div id="petSection">
+        <table id="petTable" class="table table-hover">
+            <thead id="theader">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Age</th>
+                <th>Breed</th>
+                <th>Price</th>
+                <th>Gender</th>
+                <th>Services</th>
+                <th>Contact phone</th>
+                <th></th>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+
+       </div>
+
+    </main>
+    <footer>
+        <p>Robert´s Pets</p>
+        <p>Mexicali BC, México</p>
+        <p>Copyright &copy Robert Valdés 2020</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/Class.js"></script>
+    <script src="js/directory.js"></script>
+    <script src="test/test6.js"></script>
+
+
+</body>
+</html>
